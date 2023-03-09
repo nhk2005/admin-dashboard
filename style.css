@@ -12,7 +12,21 @@
 
 .header {
   grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
   background-color: green;
+}
+
+.personal-zone {
+  display: flex;
+}
+
+.welcome-message {
+  display: flex;
+}
+
+.action-menu {
+  display: flex;
 }
 
 .sidebar-dashboard {
