@@ -22,6 +22,7 @@
   grid-column: 2 / -1;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
+  font-size: 1.5rem;
   padding: 0 16px;
 }
 
@@ -59,6 +60,10 @@
   gap: 16px;
 }
 
+.welcome-message p:first-child {
+  font-size: 1rem;
+}
+
 .action-menu {
   margin-right: 50px;
   display: flex;
@@ -73,10 +78,6 @@
   flex-direction: column;
   gap: 50px;
   padding: 16px;
-}
-
-.sidebar-dashboard {
-  font-size: 1rem;
 }
 
 .sidebar-dashboard ul {
