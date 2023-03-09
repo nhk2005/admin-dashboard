@@ -1,5 +1,6 @@
-body {
+* {
   margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -16,7 +17,23 @@ body {
 
 .sidebar-dashboard {
   grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 16px;
   background-color: blue;
+}
+
+.sidebar-dashboard {
+  font-size: 1rem;
+}
+
+.sidebar-dashboard ul {
+  font-size: 1.5rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .content {
