@@ -96,7 +96,7 @@
   padding: 8px;
 }
 
-.sidebar-container {
+.announcement-container {
   display: grid;
   grid-row: repeat(3, 1fr);
   gap: 16px;
@@ -109,4 +109,18 @@
 
 .sidebar-trending {
   grid-column: -2 / -1;
+  padding: 8px;
+}
+
+.trending-container {
+  display: grid;
+  grid-row: repeat(4, 1fr);
+  gap: 16px;
+  padding: 24px;
+}
+
+.trending-container > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
