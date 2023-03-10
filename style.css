@@ -42,13 +42,6 @@
   background-color: var(--gray);
 }
 
-.avatar {
-  width: 50px;
-  height: 50px;
-  border: 1px solid red;
-  border-radius: 50%;
-}
-
 .personal-zone {
   margin-right: 30px;
   display: flex;
@@ -93,10 +86,14 @@
   gap: 8px;
 }
 
-.sidebar-dashboard ul > li {
+.sidebar-dashboard > h2, .sidebar-dashboard ul > li {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.content, .sidebar-announcement, .sidebar-trending {
+  background-color: var(--gray);
 }
 
 .content {
@@ -125,7 +122,10 @@
 }
 
 .sidebar-announcement {
-  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 32px;
 }
 
 .announcement-container {
@@ -133,26 +133,63 @@
   grid-row: repeat(3, 1fr);
   gap: 16px;
   padding: 24px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.announcement > h3 {
+  font-size: 1rem;
 }
 
 .announcement > p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .sidebar-trending {
   grid-column: -2 / -1;
-  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 32px;
 }
 
 .trending-container {
   display: grid;
-  grid-row: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 16px;
-  padding: 24px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .trending-container > div {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.shadow {
+  background-image: url(img/shadow.jpg);
+  background-size: cover;
+}
+
+.chitose {
+  background-image: url(img/chitose.jpg);
+  background-size: cover;
+}
+
+.duke {
+  background-image: url(img/duke.webp);
+  background-size: cover;
+}
+
+.unknown {
+  background-image: url(img/unknown.jpg);
+  background-size: cover;
 }
