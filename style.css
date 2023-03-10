@@ -31,11 +31,11 @@
   align-items: center;
 }
 
-.search-area > input[type="search"] {
+.search-area > input[type="text"] {
   width: 60%;
-  height: 25px;
-  border: 1px solid gray;
+  border: none;
   border-radius: 2% / 50%;
+  padding: 8px;
   background-color: var(--search-color);
 }
 
@@ -93,6 +93,18 @@
 }
 
 .sidebar-announcement {
+  padding: 8px;
+}
+
+.sidebar-container {
+  display: grid;
+  grid-row: repeat(3, 1fr);
+  gap: 16px;
+  padding: 24px;
+}
+
+.announcement > p {
+  font-size: 0.9rem;
 }
 
 .sidebar-trending {
