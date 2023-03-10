@@ -10,14 +10,18 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.header, .sidebar-dashboard, .content, .sidebar-announcement, .sidebar-trending {
-  border: 1px solid black;
+.iconify {
+  font-size: 1.5rem;
 }
 
 .container {
   display: grid;
   grid-template-rows: 1fr 2fr 1.75fr;
   grid-template-columns: 1fr 3.5fr 1.25fr;
+}
+
+.header, .sidebar-dashboard, .content, .sidebar-announcement, .sidebar-trending {
+  border: 1px solid black;
 }
 
 .header {
@@ -148,12 +152,17 @@
 
 .card > div:last-child {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   justify-content: end;
 }
 
-.iconify {
-  font-size: 1.5rem;
+.card .iconify {
+  padding: 8px;
+}
+
+.card .iconify:hover {
+  border-radius: 50%;
+  background-color: rgb(105, 105, 105, 0.25);
 }
 
 .sidebar-announcement {
