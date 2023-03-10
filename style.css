@@ -140,12 +140,13 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: space-between;
+  gap: 32px;
   background-color: white;
   padding: 32px;
 }
 
-.card > div {
+.card > div:last-child {
   display: flex;
   gap: 24px;
   justify-content: end;
